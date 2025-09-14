@@ -2,14 +2,12 @@ import { StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import CustomButton from './components/CustomButton/CustomButton.jsx';
 import ProductCard from './components/ProductCard/ProductCard.jsx';
-// import SearchBar from './components/SearchBar/SearchBar.jsx';
-import { SearchBar } from '@rneui/themed';
+import SwitchComponent from './components/SearchBar/SearchBar.jsx';
 
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <SearchBar placeholder="Type Here..." />
-      {/* <SearchBar placeholder="Search..." /> */}
+      <SwitchComponent />
       <ProductCard
         name="Капучино"
         price="12.00"
@@ -22,11 +20,20 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#F5F5DC',
-    justifyContent: 'center',
-    alignItems: 'center',
+  view: {
+    marginHorizontal: 16,
+    marginTop: 10,
+  },
+  searchContainer: {
+    backgroundColor: 'transparent',
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    padding: 0,
+  },
+  inputContainer: {
+    backgroundColor: '#f0f0f0',
+    borderRadius: 10,
+    height: 40,
   },
 });
 

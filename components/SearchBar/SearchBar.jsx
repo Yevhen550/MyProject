@@ -1,36 +1,42 @@
-import React from 'react';
-import { View, TextInput, StyleSheet, Dimensions } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import Colors from '../../constants/Colors';
+import React, { useState } from 'react';
+import { SearchBar } from '@rneui/themed';
+import { View, StyleSheet } from 'react-native';
 
-const SearchBar = ({ placeholder }) => {
+const SearchBarComponent = () => {
+  const [search, setSearch] = useState('');
+
+  const updateSearch = text => {
+    setSearch(text);
+  };
+
   return (
-    <View style={styles.container}>
-      <Ionicons name="search" size={20} color="gray" />
-      <TextInput style={styles.input} placeholder={placeholder} />
+    <View style={styles.view}>
+      <SearchBar
+        placeholder="Type Here..."
+        onChangeText={updateSearch}
+        value={search}
+        platform="default"
+        containerStyle={styles.searchContainer}
+        inputContainerStyle={styles.inputContainer}
+      />
     </View>
   );
 };
 
-const { width } = Dimensions.get('window');
-
 const styles = StyleSheet.create({
-  container: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#f2f2f2',
-    borderRadius: 8,
-    padding: 10,
-    margin: 16,
-    width: width * 0.9,
-    alignSelf: 'center',
+  view: {
+    marginVertical: 20,
+    margin: 10,
   },
-  input: {
-    marginLeft: 8,
-    fontSize: 14,
-    flex: 1,
-    // backgroundColor: Colors.secondary,
+  searchContainer: {
+    backgroundColor: 'transparent',
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+  },
+  inputContainer: {
+    backgroundColor: '#eee',
+    borderRadius: 8,
   },
 });
 
-export default SearchBar;
+export default SearchBarComponent;
