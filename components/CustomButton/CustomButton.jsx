@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet } from 'react-native';
+import { TouchableOpacity, Text, StyleSheet, Dimensions } from 'react-native';
 import Colors from '../../constants/Colors';
 
 const CustomButton = ({ title, onPress }) => {
@@ -10,14 +10,17 @@ const CustomButton = ({ title, onPress }) => {
   );
 };
 
+const { width } = Dimensions.get('window');
+
 const styles = StyleSheet.create({
   button: {
     backgroundColor: Colors.secondary,
     paddingVertical: 15,
-    paddingHorizontal: 20,
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
+    width: width * 0.9,
+    alignSelf: 'center',
     // Shadow для iOS
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },

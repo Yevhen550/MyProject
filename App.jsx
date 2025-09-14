@@ -2,13 +2,17 @@ import { StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import CustomButton from './components/CustomButton/CustomButton.jsx';
 import ProductCard from './components/ProductCard/ProductCard.jsx';
+// import SearchBar from './components/SearchBar/SearchBar.jsx';
+import { SearchBar } from '@rneui/themed';
 
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
+      <SearchBar placeholder="Type Here..." />
+      {/* <SearchBar placeholder="Search..." /> */}
       <ProductCard
-        name="Card"
-        price="12"
+        name="Капучино"
+        price="12.00"
         imageUrl="https://images.unsplash.com/photo-1509042239860-f550ce710b93"
         onPress={() => {}}
       />
