@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { SearchBar } from '@rneui/themed';
 import { View, StyleSheet } from 'react-native';
+import Colors from '../../constants/Colors';
 
 const SearchBarComponent = () => {
   const [search, setSearch] = useState('');
@@ -25,7 +26,6 @@ const SearchBarComponent = () => {
 
 const styles = StyleSheet.create({
   view: {
-    marginVertical: 20,
     margin: 10,
   },
   searchContainer: {
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 0,
   },
   inputContainer: {
-    backgroundColor: '#eee',
+    backgroundColor: Colors.background,
     borderRadius: 8,
   },
 });

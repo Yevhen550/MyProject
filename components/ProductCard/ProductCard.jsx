@@ -10,15 +10,19 @@ const ProductCard = ({ imageUrl, title, price }) => {
   return (
     <View style={styles.card}>
       <Image source={{ uri: imageUrl }} style={styles.image} />
+
       <View style={styles.info}>
         <Text style={styles.title}>{title}</Text>
         <Text style={styles.price}>€ {price}</Text>
       </View>
+
       <View style={styles.counter}>
         <TouchableOpacity style={styles.circle} onPress={decrement}>
           <Text style={styles.sign}>–</Text>
         </TouchableOpacity>
+
         <Text style={styles.count}>{count}</Text>
+
         <TouchableOpacity style={styles.circle} onPress={increment}>
           <Text style={styles.sign}>+</Text>
         </TouchableOpacity>
@@ -55,10 +59,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
     marginBottom: 4,
+    color: '#333',
   },
   price: {
     fontSize: 14,
-    color: '#444',
+    color: '#555',
     fontWeight: '500',
   },
   counter: {
