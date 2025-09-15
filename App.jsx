@@ -44,7 +44,7 @@ const App = () => {
       </View>
       <View style={styles.buttonContainer}>
         <CustomButton
-          title="Add more"
+          title="Купити"
           onPress={() => {
             alertMessage();
           }}
