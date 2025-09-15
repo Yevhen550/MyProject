@@ -3,13 +3,15 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import CustomButton from './components/CustomButton/CustomButton.jsx';
 import ProductCard from './components/ProductCard/ProductCard.jsx';
 import SwitchComponent from './components/SearchBar/SearchBar.jsx';
+import Header from './components/Header/Header.jsx';
 
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
+      <Header title="Coffee" logo="" />
       <SwitchComponent />
       <ProductCard
-        name="Капучино"
+        name="Cappuccino"
         price="12.00"
         imageUrl="https://images.unsplash.com/photo-1509042239860-f550ce710b93"
         onPress={() => {}}

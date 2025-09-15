@@ -1,49 +1,91 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
-import Colors from '../../constants/Colors';
 
-const ProductCard = ({ name, price, imageUrl, onPress }) => {
+const ProductCard = ({ imageUrl, title, price }) => {
+  const [count, setCount] = useState(0);
+
+  const increment = () => setCount(count + 1);
+  const decrement = () => count > 0 && setCount(count - 1);
+
   return (
-    <TouchableOpacity style={styles.card} onPress={onPress}>
+    <View style={styles.card}>
       <Image source={{ uri: imageUrl }} style={styles.image} />
-      <View style={styles.infoContainer}>
-        <Text style={styles.name}>{name}</Text>
-        <Text style={styles.price}>{price}</Text>
+      <View style={styles.info}>
+        <Text style={styles.title}>{title}</Text>
+        <Text style={styles.price}>€ {price}</Text>
       </View>
-    </TouchableOpacity>
+      <View style={styles.counter}>
+        <TouchableOpacity style={styles.circle} onPress={decrement}>
+          <Text style={styles.sign}>–</Text>
+        </TouchableOpacity>
+        <Text style={styles.count}>{count}</Text>
+        <TouchableOpacity style={styles.circle} onPress={increment}>
+          <Text style={styles.sign}>+</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: Colors.white,
-    borderRadius: 15,
-    overflow: 'hidden',
-    margin: 10,
-    elevation: 5,
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    marginVertical: 8,
+    marginHorizontal: 12,
+    borderRadius: 16,
+    padding: 12,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    width: 150,
+    shadowOpacity: 0.05,
+    shadowRadius: 4,
+    elevation: 2,
   },
   image: {
-    width: '100%',
-    height: 120,
-    resizeMode: 'cover',
+    width: 70,
+    height: 70,
+    borderRadius: 12,
+    marginRight: 12,
   },
-  infoContainer: {
-    padding: 10,
+  info: {
+    flex: 1,
+    justifyContent: 'center',
   },
-  name: {
-    fontSize: 14,
-    fontWeight: 'bold',
-    color: Colors.primary,
+  title: {
+    fontSize: 16,
+    fontWeight: '600',
+    marginBottom: 4,
   },
   price: {
-    fontSize: 12,
-    color: Colors.secondary,
-    marginTop: 5,
+    fontSize: 14,
+    color: '#444',
+    fontWeight: '500',
+  },
+  counter: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  circle: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: '#ddd',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginHorizontal: 6,
+    backgroundColor: '#f9f9f9',
+  },
+  sign: {
+    fontSize: 18,
+    fontWeight: '600',
+    color: '#ff6b00',
+  },
+  count: {
+    fontSize: 16,
+    fontWeight: '500',
+    minWidth: 20,
+    textAlign: 'center',
   },
 });
 
