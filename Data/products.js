@@ -5,7 +5,7 @@ const products = [
     title: 'Еспресо',
     imageUrl:
       'https://images.unsplash.com/photo-1579992357154-faf4bde95b3d?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '1.99',
+    price: '35',
     rating: '4.8',
   },
   {
@@ -14,7 +14,7 @@ const products = [
     title: 'Американо',
     imageUrl:
       'https://images.unsplash.com/photo-1580661869408-55ab23f2ca6e?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '2.49',
+    price: '40',
     rating: '4.6',
   },
   {
@@ -23,7 +23,7 @@ const products = [
     title: 'Латте',
     imageUrl:
       'https://images.unsplash.com/photo-1593443320739-77f74939d0da?q=80&w=1336&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '3.49',
+    price: '50',
     rating: '4.9',
   },
   {
@@ -32,7 +32,7 @@ const products = [
     title: 'Капучино',
     imageUrl:
       'https://images.unsplash.com/photo-1534687941688-651ccaafbff8?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '3.29',
+    price: '50',
     rating: '4.8',
   },
   {
@@ -41,7 +41,7 @@ const products = [
     title: 'Флет Вайт',
     imageUrl:
       'https://images.unsplash.com/photo-1688683035298-2eff07d8c323?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '3.19',
+    price: '55',
     rating: '4.7',
   },
   {
@@ -50,7 +50,7 @@ const products = [
     title: 'Маккіато',
     imageUrl:
       'https://images.unsplash.com/photo-1586004984843-25ac1da962c3?q=80&w=1302&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '2.89',
+    price: '55',
     rating: '4.6',
   },
   {
@@ -59,7 +59,7 @@ const products = [
     title: 'Доппіо',
     imageUrl:
       'https://images.unsplash.com/photo-1686860633705-52054227718b?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '2.49',
+    price: '45',
     rating: '4.7',
   },
   {
@@ -68,7 +68,7 @@ const products = [
     title: 'Тріппло',
     imageUrl:
       'https://images.unsplash.com/photo-1648867134727-0b868ba73eb4?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '2.99',
+    price: '50',
     rating: '4.6',
   },
   {
@@ -77,7 +77,7 @@ const products = [
     title: 'Рістретто',
     imageUrl:
       'https://images.unsplash.com/photo-1587663939437-9f9f1e8c9f82?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '1.79',
+    price: '35',
     rating: '4.5',
   },
   {
@@ -86,7 +86,7 @@ const products = [
     title: 'Лунго',
     imageUrl:
       'https://images.unsplash.com/photo-1657778515214-99ec3a2d3d38?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '2.19',
+    price: '65',
     rating: '4.4',
   },
   {
@@ -95,7 +95,7 @@ const products = [
     title: 'Кон панна',
     imageUrl:
       'https://images.unsplash.com/photo-1585970279348-df94767b9cca?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '2.69',
+    price: '70',
     rating: '4.5',
   },
   {
@@ -104,7 +104,7 @@ const products = [
     title: 'Бреве',
     imageUrl:
       'https://images.unsplash.com/photo-1521677633993-721dd3f95c10?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '3.59',
+    price: '55',
     rating: '4.7',
   },
   {
@@ -113,7 +113,7 @@ const products = [
     title: 'Кава по-віденськи',
     imageUrl:
       'https://images.unsplash.com/photo-1594060445139-717b4b8b3a37?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '3.99',
+    price: '40',
     rating: '4.8',
   },
   {
@@ -122,7 +122,7 @@ const products = [
     title: 'Латте Маккіато',
     imageUrl:
       'https://images.unsplash.com/photo-1594146971821-373461fd5cd8?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '3.69',
+    price: '65',
     rating: '4.7',
   },
   {
@@ -131,7 +131,7 @@ const products = [
     title: 'Фредо',
     imageUrl:
       'https://images.unsplash.com/photo-1724080419348-0e8955618fc6?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '3.19',
+    price: '45',
     rating: '4.4',
   },
   {
@@ -140,7 +140,7 @@ const products = [
     title: 'Айріш',
     imageUrl:
       'https://images.unsplash.com/photo-1730303557690-07dc29dc132f?q=80&w=1363&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '4.49',
+    price: '50',
     rating: '4.6',
   },
   {
@@ -149,7 +149,7 @@ const products = [
     title: 'Корретто',
     imageUrl:
       'https://images.unsplash.com/photo-1620052087057-bfd8235f5874?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '3.99',
+    price: '40',
     rating: '4.5',
   },
   {
@@ -158,7 +158,7 @@ const products = [
     title: 'Раф кава',
     imageUrl:
       'https://images.unsplash.com/photo-1580337604891-dc9b472d8fa7?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '3.89',
+    price: '35',
     rating: '4.8',
   },
   {
@@ -167,7 +167,7 @@ const products = [
     title: 'Романо',
     imageUrl:
       'https://images.unsplash.com/photo-1605468596782-502ce2012ef0?q=80&w=2354&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '2.39',
+    price: '30',
     rating: '4.3',
   },
   {
@@ -176,7 +176,7 @@ const products = [
     title: 'Медовий Раф',
     imageUrl:
       'https://images.unsplash.com/photo-1563971318399-87f3b26e554c?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '3.99',
+    price: '40',
     rating: '4.7',
   },
   {
@@ -185,7 +185,7 @@ const products = [
     title: 'Гляссе',
     imageUrl:
       'https://images.unsplash.com/photo-1752917069627-0753ec7a7915?q=80&w=986&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '3.29',
+    price: '45',
     rating: '4.6',
   },
   {
@@ -194,7 +194,7 @@ const products = [
     title: 'Мокко',
     imageUrl:
       'https://images.unsplash.com/photo-1568672915958-84317e3d6444?q=80&w=988&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '3.59',
+    price: '50',
     rating: '4.7',
   },
   {
@@ -203,7 +203,7 @@ const products = [
     title: 'Марочино',
     imageUrl:
       'https://images.unsplash.com/photo-1635607415838-76b03052a668?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '3.19',
+    price: '45',
     rating: '4.5',
   },
   {
@@ -212,7 +212,7 @@ const products = [
     title: 'Бічерін',
     imageUrl:
       'https://images.unsplash.com/photo-1646972807954-2b35c5959fa0?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    price: '4.29',
+    price: '65',
     rating: '4.8',
   },
 ];

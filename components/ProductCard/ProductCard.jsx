@@ -13,7 +13,7 @@ const ProductCard = ({ imageUrl, title, price }) => {
 
       <View style={styles.info}>
         <Text style={styles.title}>{title}</Text>
-        <Text style={styles.price}>€ {price}</Text>
+        <Text style={styles.price}>{price} ₴</Text>
       </View>
 
       <View style={styles.counter}>

@@ -13,7 +13,7 @@ const SearchBarComponent = () => {
   return (
     <View style={styles.view}>
       <SearchBar
-        placeholder="Type Here..."
+        placeholder="Пошук напою..."
         onChangeText={updateSearch}
         value={search}
         platform="default"

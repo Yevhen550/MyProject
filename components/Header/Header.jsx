@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
+import Colors from '../../constants/Colors';
 
 const Header = ({ title, logo }) => {
   return (
@@ -16,7 +17,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     padding: 12,
-    backgroundColor: '#f7f7f7',
+    backgroundColor: Colors.secondary,
   },
   logo: { width: 40, height: 40, marginRight: 10 },
   title: { fontSize: 20, fontWeight: '700' },

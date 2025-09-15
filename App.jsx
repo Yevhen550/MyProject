@@ -2,16 +2,30 @@ import { FlatList, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import CustomButton from './components/CustomButton/CustomButton.jsx';
 import ProductCard from './components/ProductCard/ProductCard.jsx';
-import SwitchComponent from './components/SearchBar/SearchBar.jsx';
+import SearchBarComponent from './components/SearchBar/SearchBar.jsx';
 import Header from './components/Header/Header.jsx';
 import alertMessage from './helpers/alert.js';
 import products from './Data/products.js';
+import categories from './Data/categories.js';
+import CategoryList from './components/CategoryList/CategoryList.jsx';
+import { useState } from 'react';
 
 const App = () => {
+  const [activeCategory, setActiveCategory] = useState(categories[0].name);
+
+  const handleCategoryPress = categoryName => {
+    setActiveCategory(categoryName);
+  };
+
   return (
     <SafeAreaView style={styles.container}>
-      <Header title="Coffee" logo="" />
-      <SwitchComponent />
+      <Header title="Coffee store ☕️" logo="" />
+      <SearchBarComponent />
+      <CategoryList
+        categories={categories}
+        activeCategory={activeCategory}
+        onCategoryPress={handleCategoryPress}
+      />
 
       <View style={styles.listContainer}>
         <FlatList
